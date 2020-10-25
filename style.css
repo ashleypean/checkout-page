@@ -18,10 +18,73 @@ div.cart {
   flex-direction: column;
   margin: 1rem .5rem;
   border-radius: 12px; 
+  padding: 1.3rem;
 }
 
 ul.cart-contents {
   list-style-type: none;
+  padding: 0; 
+  margin: 0;
+}
+
+/*Format image for cart contents */
+ul.cart-contents img {
+  height: auto; 
+  width: 50%;
+  border-radius: 15%;
+}
+
+/* Quantity counter - style button so they are inline with a gray border*/
+div.quantity {
+  border: 1px solid #828282;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+div.quantity button {
+  margin: auto;
+  padding: 0;
+  width: 20%;
+  height: 50%;
+  display: inline-block;
+  border: none;
+  border-radius: 8px;
+  background-color: #E0E0E0;
+  color: #828282;
+  font-size: 1.1rem;
+}
+
+div.quantiy p {
+  margin: 0; 
+  padding: 0;
+  width: 10%;
+  display: inline-block;
+}
+
+/* Shipping and Total sytling */
+hr {
+  background-color: #BDBDBD;
+  width: 100%;
+  height: 1px;
+  border: none;
+}
+
+h4.cost {
+  color: #333333;
+  width: 40%;
+  display: inline-block;
+  margin: .3rem 0;
+}
+
+p.cost {
+  color: #333333;
+  width: 58%;
+  display: inline-block;
+  margin: .3rem 0;
+  text-align: right;
 }
 
 /* Contact form */
