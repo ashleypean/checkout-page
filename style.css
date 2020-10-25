@@ -81,15 +81,16 @@ button[type="submit"] {
   border-radius: 8px;
   font-size: 1.3rem;
   padding: .8rem 1.8rem;
-  margin-left: 50%;
+  margin: 0 1.5rem 0 48%;
 }
 
 footer {
   font-size: .6rem;
   color: #828282;
   text-align: center;
+  margin: 5rem 2rem 1.5rem;
 }
 
 footer a, footer a:visited {
-  color: rgb(48, 48, 48);
+  color: #828282;
 }
