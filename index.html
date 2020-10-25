@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"/>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/shopping-cart.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
     <title>Checkout</title>
   </head>
+
   <body>
     <div class="container">
       <h1 class="title">Checkout</h1>
@@ -14,91 +17,109 @@
         <ul class="cart-contents">
           <li id="item-1">
             <img src="img/photo1.png" alt="Green vintage backbag">
-            <p class="item-name">Vintage Backbag</p>
-            <p class="discounted-price">$54.99</p>
-            <p class="original-price">$94.99</p>
-            <div class="quantity">
-              <button class="subtract-quantity">-</button>
-              <p class="counter">1</p>
-              <button class="add-quantity">+</button>
+            <div class="item-details">
+              <p class="item-name">Vintage Backbag</p>
+              <p class="discounted-price">$54.99</p>
+              <p class="original-price">$94.99</p>
+              <div class="quantity">
+                <button class="subtract-quantity">-</button>
+                <p class="counter">1</p>
+                <button class="add-quantity">+</button>
             </div>
+            </div>
+            
           </li>
           <li id="item-2">
             <img src="img/photo2.png" alt="Blue Levi shoes">
-            <p class="item-name">Levi shoes</p>
-            <p class="discounted-price">$74.99</p>
-            <p class="original-price">$124.99</p>
-            <div class="quantity">
-              <button class="subtract-quantity">-</button>
-              <p class="counter">1</p>
-              <button class="add-quantity">+</button>
+            <div class="item-details">
+              <p class="item-name">Levi shoes</p>
+              <p class="discounted-price">$74.99</p>
+              <p class="original-price">$124.99</p>
+              <div class="quantity">
+                <button class="subtract-quantity">-</button>
+                <p class="counter">1</p>
+                <button class="add-quantity">+</button>
             </div>
+            </div>
+            
           </li>
         </ul>
   
         <hr>
         <h4 class="shipping-cost">Shipping</h4>
         <p class="shipping-cost">$19</p>
+        <hr>
         <h4 class="total-cost">Total</h4>
         <p class="total-cost">$148.98</p>
       </div>
       
       <div class="contact">
-        <h4>Contact information</h4>
         <form>
-          <label for="email">Email</label>
-          <div class="email">
-            <img src="img/email.png" alt="Email icon">
-            <input type="email" name="email" id="email">
+          <h4>Contact information</h4>
+          <label for="email">E-mail</label>
+          <div class="email input">
+            <img src="img/email.png" alt="Email" class="logo">
+            <input type="email" name="email" id="email" placeholder="Enter your email...">
           </div>
 
           <label for="phone">Phone</label>
-          <div class="phone">
-            <img src="img/phone.png" alt="Phone icon">
-            <input type="tel" name="phone" id="phone">
+          <div class="phone input">
+            <img src="img/phone.png" alt="Phone" class="logo">
+            <input type="tel" name="phone" id="phone" placeholder="Enter your phone...">
           </div>
-
+          
           <h4>Shipping address</h4>
 
           <label for="name">Full name</label>
-          <div class="name">
-            <img src="img/name.png" alt="Name logo">
-            <input type="text" name="name" id="name">
+          <div class="name input">
+            <img src="img/name.png" alt="Name" class="logo">
+            <input type="text" name="name" id="name" placeholder="Your name...">
           </div>
 
           <label for="address">Address</label>
-          <div class="address">
-            <img src="img/address.png" alt="Address">
-            <input type="text" name="address" id="address">
+          <div class="address input">
+            <img src="img/address.png" alt="Address" class="logo">
+            <input type="text" name="address" id="address" placeholder="Your address...">
           </div>
 
           <label for="city">City</label>
-          <div class="city">
-            <img src="img/city.png" alt="City logo">
-            <input type="text" name="city" id="city">
+          <div class="city input">
+            <img src="img/city.png" alt="City" class="logo">
+            <input type="text" name="city" id="city" placeholder="Your city...">
           </div>
 
           <label for="country">Country</label>
-          <div class="country">
-            <img src="img/country.png" alt="Country">
-            <input type="text" name="country" id="country">
+          <div class="country input">
+            <img src="img/country.png" alt="Country" class="logo">
+            <input type="text" name="country" id="country" list="country-name" placeholder="Your country...">
+            <datalist id="country-name">
+              <option value="United States">United States</option>
+            </datalist>
           </div>
 
           <label for="postal-code">Postal code</label>
-          <div class="postal-code">
-            <img src="img/postal.png" alt="Mailbox">
+          <div class="postal-code input">
+            <img src="img/postal.png" alt="Mailbox" class="logo">
             <input type="text" name="postal-code" id="postal-code" placeholder="Your postal code">
           </div>
           
-          <input type="checkbox" name="save-info" id="save-info">
-          <label for="save-info">Save this information for next time</label>
+          <div class="save-info">
+            <input type="checkbox" name="save-info" id="save-info">
+            <label for="save-info">Save this information for next time</label>
+          </div>
+          
+          <br>
 
           <button type="submit">Continue</button>
         </form>
       </div>
       <footer>
-        Challenge by <a href="https://devchallenges.io/">@DevChallenges.io</a>. Coded by <a href="https://github.com/ashleypean">Ashley Pean</a>
+        Coded by <a href="https://github.com/ashleypean">Ashley Pean</a> @DevChallenges.io 
+        <br>
+        Icons courtesy of <a href="https://icons8.com">Icons8</a>
       </footer>
     </div>
+
+    <script src="index.js"></script>
   </body>
 </html>

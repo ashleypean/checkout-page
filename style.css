@@ -1,7 +1,95 @@
 body, html {
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100%; 
+  font-family: 'Montserrat', sans-serif;
 }
 
+
+h1.title {
+  font-size: 1.3rem;
+  margin: 1rem;
+}
+
+/* Cart contents*/
+
+div.cart {
+  background-color: #F2F2F2;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem .5rem;
+  border-radius: 12px; 
+}
+
+ul.cart-contents {
+  list-style-type: none;
+}
+
+/* Contact form */
+form {
+  margin: 0.5rem;
+}
+
+div.contact h4 {
+  font-size: 1rem;
+  color: #333333;
+  margin: 2rem 1rem 0;
+}
+
+form label {
+  font-size: .6rem;
+  color: #828282;
+  margin: 0 1rem;;
+}
+
+form div.input {
+  border: 1px solid gray;
+  border-radius: 8px;
+  margin: .5rem 1rem;
+  padding: .5rem;
+  height: 1.5rem;
+}
+
+/* Size all logos in the contact form */
+div.contact img.logo {
+  height: 1rem;
+  width: auto;
+  color: #828282;
+}
+
+/* Size the input field in the form */
+div input {
+  width: 90%;
+  border: none;
+  outline: none;
+  margin: 0;
+}
+
+/* Make 'save-info' checkbox and label inline */
+div.save-info input[type="checkbox"] {
+  width: 5%;
+  margin: .5rem 0 0 1rem ;
+}
+
+div.save-info label {
+  margin: 0;
+}
+
+button[type="submit"] {
+  background-color: #F2994A;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.3rem;
+  padding: .8rem 1.8rem;
+  margin-left: 50%;
+}
+
+footer {
+  font-size: .6rem;
+  color: #828282;
+  text-align: center;
+}
+
+footer a, footer a:visited {
+  color: rgb(48, 48, 48);
+}
