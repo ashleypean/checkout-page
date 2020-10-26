@@ -49,4 +49,36 @@ const changeTotal = (id, str) => {
   $('p.total').text(`$${currentTotal.toFixed(2)}`)
 }
 
+//HANDLE FORM SUBMISSION
+$('form').submit(e => {
+  e.preventDefault()
 
+  const children = Array.from($('form input'))
+ 
+  //ONLY USE PROP, ATTR WILL STORE DEFAULT VALUE, NOT CURRENT VALUE
+  const checked = $(children[7]).prop('checked')
+
+  //Remove checked value from array, not needed after value is set once 
+
+  if(checked)  {
+    children.forEach(input => {
+      const inputName = $(input).prop('id')
+      const inputValue = $(input).prop('value')
+      localStorage.setItem(inputName, inputValue)
+    })
+  }
+
+  for (let i = 0; i < localStorage.length; i++) {
+    console.log(localStorage.getItem(localStorage.key(i)))
+  }
+
+  $('.modal').dialog({
+    appendTo: 'body',
+    modal: true, 
+    title: 'Order Confirmation',
+    closeText: 'close', 
+    draggable: false, 
+    resizable: false
+  })
+
+})

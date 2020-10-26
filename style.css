@@ -201,12 +201,39 @@ div.save-info label {
 
 button[type="submit"] {
   background-color: #F2994A;
+  outline: none;
   color: white;
   border: none;
   border-radius: 8px;
   font-size: 1.3rem;
   padding: .8rem 1.8rem;
   margin: 0 1.5rem 0 48%;
+}
+
+div.modal {
+  display: none;
+}
+
+div.modal span {
+  color: darkred;
+}
+
+.ui-widget-header {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.ui-dialog-content {
+  font-size: .8rem;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.ui-button-icon-only .ui-button-text, .ui-button-icons-only .ui-button-text {
+  padding: 0px;
+  text-indent: 4px;
+  margin-left: 18px;
+  position: relative;
 }
 
 footer {
