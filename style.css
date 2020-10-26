@@ -135,7 +135,7 @@ form {
 }
 
 div.contact h4 {
-  font-size: 1rem;
+  font-size: .9rem;
   color: #333333;
   margin: 2rem 1rem 0;
 }
@@ -143,15 +143,17 @@ div.contact h4 {
 form label {
   font-size: .6rem;
   color: #828282;
-  margin: 0 1rem;;
+  margin: 0 1rem;
 }
 
 form div.input {
   border: 1px solid gray;
-  border-radius: 8px;
-  margin: .5rem 1rem;
+  border-radius: 12px;
+  margin: .1rem 1rem .5rem ;
   padding: .5rem;
   height: 1.5rem;
+  /* Used to center logo images in form */
+  display: flex;
 }
 
 /* Size all logos in the contact form */
@@ -159,6 +161,7 @@ div.contact img.logo {
   height: 1rem;
   width: auto;
   color: #828282;
+  margin: auto;
 }
 
 /* Size the input field in the form */
