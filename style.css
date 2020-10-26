@@ -21,47 +21,87 @@ div.cart {
   padding: 1.3rem;
 }
 
-ul.cart-contents {
+ul.cart-contents{
   list-style-type: none;
   padding: 0; 
-  margin: 0;
+  margin: 0 0 .5rem;
+}
+
+ul.cart-contents li {
+  margin: 0 0 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 /*Format image for cart contents */
 ul.cart-contents img {
   height: auto; 
-  width: 50%;
+  width: 40%;
   border-radius: 15%;
+  margin: 0 1.5rem 0 0;
+}
+
+div.item-details {
+  width: 45%;
+  height: auto;
+}
+
+
+div.item-details p.item-name {
+  color: #4E5150;
+  font-size: .8rem;
+  margin: 0 0 .5rem;
+}
+
+div.item-details p.discounted-price {
+  color: #F2994A;
+  /* spacing b/w original and discounted price */
+  margin: 0 1rem 0rem 0;
+  display: inline;
+  font-size: .8rem;
+}
+
+div.item-details p.original-price {
+  color: #828282;
+  text-decoration: line-through;
+  display: inline;
+  font-size: .6rem;
+  text-align: right;
 }
 
 /* Quantity counter - style button so they are inline with a gray border*/
 div.quantity {
   border: 1px solid #828282;
-  border-radius: 8px;
+  border-radius: 12px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  width: 50%;
+  justify-content: space-between;
+  width: 90%;
+  height: 3rem;
+  margin: 1rem 0 0 ;
+  padding: 0 .5rem;
 }
 
 div.quantity button {
-  margin: auto;
+  margin: auto 0;
   padding: 0;
   width: 20%;
   height: 50%;
-  display: inline-block;
   border: none;
   border-radius: 8px;
   background-color: #E0E0E0;
   color: #828282;
   font-size: 1.1rem;
+  outline: none;
 }
 
-div.quantiy p {
+div.quantiy p.counter {
   margin: 0; 
   padding: 0;
   width: 10%;
-  display: inline-block;
+  height: 80%;
+  display: inline;
 }
 
 /* Shipping and Total sytling */
@@ -77,6 +117,7 @@ h4.cost {
   width: 40%;
   display: inline-block;
   margin: .3rem 0;
+  font-size: .8rem;
 }
 
 p.cost {
@@ -85,6 +126,7 @@ p.cost {
   display: inline-block;
   margin: .3rem 0;
   text-align: right;
+  font-size: .8rem;
 }
 
 /* Contact form */
