@@ -251,4 +251,48 @@ const countries = {
 };
 
 
-console.log(countries)
+
+const listItems = $('ul.cart-contents').children()
+
+$(listItems).each(function(index) { 
+  //Store id of each list item in variable 
+  const id = $(this).attr('id')
+
+  //Add event listener for subtraction
+  $(`#${id} .subtract-quantity`).click( () => changeQuantity(id, 'subtract'))
+
+    //Add event listener for addition
+    $(`#${id} .add-quantity`).click(() => changeQuantity(id, 'add'))
+
+})
+
+
+
+function changeQuantity(id, str) {
+  let value = Number($(`#${id} p.counter`).text())
+
+  //Conditional to check and prevent negative values 
+  if(value === 0 && str === 'subtract') 
+    return;
+  //Incrementor decrement counter according to passed in assignment value
+  else {
+    str === 'subtract' ? --value : ++value
+    $(`#${id} p.counter`).text(value)
+
+    //Call function to change total price in cart
+    changeTotal(id, str)
+  }
+
+}
+
+function changeTotal(id, str) {
+  let currentTotal = Number($('p.total').attr('value'))
+  const itemPrice = Number($(`#${id} .discounted-price`).attr('value'))
+  
+  //Increment or decrement according to user input
+  str === 'subtract' ? currentTotal-=itemPrice : currentTotal+=itemPrice
+
+  //Change text and value attribute of total cost on page
+  $('p.total').attr('value', currentTotal.toFixed(2))
+  $('p.total').text(`$${currentTotal.toFixed(2)}`)
+}
