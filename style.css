@@ -172,6 +172,23 @@ div input {
   margin: 0;
 }
 
+/* Style autocomplete dropdown */
+.ui-autocomplete {
+  max-height: 4.8rem;
+  max-width: 60%;
+  overflow-y: scroll;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+}
+
+
+.ui-menu-item {
+  font-size: .7rem;
+  background: rgb(38, 36, 36);
+  color: white;
+}
+
 /* Make 'save-info' checkbox and label inline */
 div.save-info input[type="checkbox"] {
   width: 5%;
