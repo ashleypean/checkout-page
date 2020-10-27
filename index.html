@@ -14,8 +14,9 @@
   </head>
 
   <body>
-    <div class="container">
+    
       <h1 class="title">Checkout</h1>
+      <div class="container">
       <div class="cart">
         <ul class="cart-contents">
           <li id="item-1">
@@ -97,17 +98,24 @@
             <input type="text" name="city" id="city" placeholder="Your city..." >
           </div>
 
-          <label for="country">Country</label>
-          <div class="country input">
-            <img src="img/country.png" alt="Country" class="logo">
-            <input type="text" name="country" id="country" list="country-name" placeholder="Your country...">
+          <div class="main-wrapper">
+            <div class="wrap">
+              <label for="country">Country</label>
+              <div class="country input">
+              <img src="img/country.png" alt="Country" class="logo">
+              <input type="text" name="country" id="country" list="country-name" placeholder="Your country...">
+              </div>
+            </div>
+            
+            <div class="wrap">
+              <label for="postal-code">Postal code</label>
+              <div class="postal-code input">
+                <img src="img/postal.png" alt="Mailbox" class="logo">
+                <input type="text" name="postal-code" id="postal-code" placeholder="Your postal code..." >
+              </div>
+            </div>
           </div>
 
-          <label for="postal-code">Postal code</label>
-          <div class="postal-code input">
-            <img src="img/postal.png" alt="Mailbox" class="logo">
-            <input type="text" name="postal-code" id="postal-code" placeholder="Your postal code" >
-          </div>
           
           <div class="save-info">
             <input type="checkbox" name="save-info" id="save-info" >
@@ -127,15 +135,19 @@
 
         </form>
       </div>
-      <footer>
-        Coded by <a href="https://github.com/ashleypean">Ashley Pean</a>.
-        <br> 
-        Courtesy of 
-        <a href="https://devchallenges.io/">DevChallenges.io</a> 
-        and
-        <a href="https://icons8.com">Icons8</a>
-      </footer>
     </div>
+
+    <footer>
+      <p>Coded by <a href="https://github.com/ashleypean">Ashley Pean</a>.</p>
+
+      <p>
+       &nbsp;Courtesy of 
+      <a href="https://devchallenges.io/">DevChallenges.io</a> 
+      and
+      <a href="https://icons8.com">Icons8</a>
+      </p>
+      
+    </footer>    
 
     <script src="index.js"></script>
   </body>
