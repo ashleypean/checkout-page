@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="checkout-page-for-udacity.s3-website.us-east-2.amazonaws.com">
+    <a href="http://checkout-page-for-udacity.s3-website.us-east-2.amazonaws.com">
       Demo
     </a>
     <span> | </span>
