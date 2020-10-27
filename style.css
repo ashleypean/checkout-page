@@ -295,7 +295,7 @@ footer a, footer a:visited {
     display: flex;
     flex-direction: row;
     height: 5rem;
-    margin: 0 2%;
+    margin: 0;
   }
 
   div.wrap {
