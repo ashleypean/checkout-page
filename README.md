@@ -30,6 +30,6 @@
 
 ## Contact
 
-- Website [your-website.com](https://ashleypeancodes.com)
-- GitHub [@your-username](https://github.com/ashleypean)
-- Twitter [@your-twitter](https://twitter.com/12sugarplums)
+- Website [ashleypeancodes.com](https://ashleypeancodes.com)
+- GitHub [@ashleypean](https://github.com/ashleypean)
+- Twitter [@12sugarplums](https://twitter.com/12sugarplums)
